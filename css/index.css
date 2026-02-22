@@ -168,7 +168,7 @@ nav a:hover{
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 2.5rem;
+  padding: 2rem;
   box-shadow: var(--shadow-sm);
 }
 .card:hover{
@@ -191,20 +191,21 @@ nav a:hover{
 }
 
 /* Badges / tags */
-.skills ul{
+.badges{
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  list-style-type: none;
+  max-width: 90%;
 }
-.skill li{
-  display: inline-flex;
-  align-items: center;
-  padding: 0.25rem 0.55rem;
-  border-radius: 999px;
+.badge{
+  align-items: flex-start;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--primary);
-  background: rgba(30,41,59,0.06);
+  color: var(--surface);
+  background-color: var(--primary);
   border: 1px solid rgba(30,41,59,0.10);
 }
 .badge.accent{
